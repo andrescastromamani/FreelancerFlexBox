@@ -1,7 +1,10 @@
+/*Custom Property*/
 :root{
     --primario:#ffc107;
     --secundario:rgb(11, 132, 141);
     --oscuro:#212121;
+
+    --anchomaximo:1200px;
 }
 html{
     box-sizing: border-box;
@@ -20,8 +23,16 @@ body{
 h1, h2, h3{
     margin: 0;
 }
+h2, h3{
+    text-align: center;
+}
+h3{
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 3rem;
+}
 .site-header nav{
-    max-width: 1200px;
+    max-width: var(--anchomaximo);
     margin: 0 auto;
     padding: 2rem 0;
 
@@ -91,4 +102,17 @@ h1, h2, h3{
     font-weight: 700;
     font-size: 2rem;
     border-radius: .5rem;
+}
+.contenedor{
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 5px -4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 10px 5px -4px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 5px -4px rgba(0,0,0,0.5);
+}
+.servicios{
+    margin: 3rem auto;
 }
